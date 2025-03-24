@@ -19,8 +19,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module"
-#Documentation = "https://github.com/CoreElectronics/CE-PiicoDev-Unified/blob/main/doc/METHODS.md"
+Homepage = "https://core-electronics.com.au/piicodev-atmospheric-sensor-bme280.html"
+Documentation = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module"
 Repository = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module"
 Issues = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module/issues"
 #Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
