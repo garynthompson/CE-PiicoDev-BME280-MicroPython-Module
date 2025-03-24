@@ -1,5 +1,5 @@
 _A=None
-from PiicoDev_Unified import *
+from PiicoDev_Unified import*
 compat_str='\nUnified PiicoDev library out of date.  Get the latest module: https://piico.dev/unified \n'
 class PiicoDev_BME280:
 	def __init__(self,bus=_A,freq=_A,sda=_A,scl=_A,t_mode=2,p_mode=5,h_mode=1,iir=1,address=119):

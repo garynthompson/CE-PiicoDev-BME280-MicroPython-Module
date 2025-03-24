@@ -24,13 +24,13 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.11'
 
       - name: install python packages
-        run: pip install python-minifier 
+        run: pip install git+https://github.com/garynthompson/python-minifier.git@remove_unused_platforms#egg=python-minifier
 
       - name: run minifier
-        run: pyminify PiicoDev_BME280.py > min/PiicoDev_BME280.py
+        run: pyminify --remove-literal-statements PiicoDev_BME280.py > min/PiicoDev_BME280.py
           
       - name: commit files
         run: |

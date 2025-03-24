@@ -1,0 +1,34 @@
+[project]
+name = "PiicoDev-BME280"
+version = "1.10.1"
+description = "Drivers for the PiicoDev ecosystem of sensors and modules"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name="Core Electronics", email="production.inbox@coreelectronics.com.au" }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+]
+
+dependencies = [
+    "PiicoDev_Unified @ git+https://github.com/garynthompson/CE-PiicoDev-Unified.git@garys"
+]
+
+[project.urls]
+Homepage = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module"
+#Documentation = "https://github.com/CoreElectronics/CE-PiicoDev-Unified/blob/main/doc/METHODS.md"
+Repository = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module"
+Issues = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Module/issues"
+#Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[tool.setuptools]
+py-modules = ["PiicoDev_BME280"]
+
+[project.optional-dependencies]
+dev = [
+    "python-minifier @ git+https://github.com/garynthompson/python-minifier.git@remove_unused_platforms"
+]
