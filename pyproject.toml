@@ -26,7 +26,7 @@ Issues = "https://github.com/CoreElectronics/CE-PiicoDev-BME280-MicroPython-Modu
 #Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
 
 [tool.setuptools]
-py-modules = ["PiicoDev_BME280"]
+py-modules = ["PiicoDev_BME280", "PiicoDev_BME280_async"]
 
 [project.optional-dependencies]
 dev = [
