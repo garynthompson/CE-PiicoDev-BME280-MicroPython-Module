@@ -1,18 +1,8 @@
 # An asyncio version of PiicoDev_BME280
 # noinspection PyProtectedMember
-from PiicoDev_Unified import _SYSNAME, i2c_err_str
+from PiicoDev_Unified import i2c_err_str, a_sleep_ms
 
 from PiicoDev_BME280 import PiicoDev_BME280
-
-if _SYSNAME == 'Linux':
-    from asyncio import sleep as a_sleep_s
-
-    async def a_sleep_ms(t: int):
-        await a_sleep_s(t/1000)
-
-else:
-    # noinspection PyUnresolvedReferences
-    from asyncio import sleep_ms as a_sleep_ms
 
 
 # noinspection DuplicatedCode,PyPep8Naming,SpellCheckingInspection
